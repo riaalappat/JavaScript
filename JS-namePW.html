@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doc</title>
+</head>
+<body>
+    <form action="submitted.html" onsubmit="return validate()">
+        Enter name:<input type="text" id="t1" value="">
+        Enter password:<input type="password" id="p1" value="">
+        <input type="submit">
+        
+
+    </form>
+<script>
+function validate()
+{
+    if (document.getElementById("t1").value=='')
+    { return false;
+    }
+    if(document.getElementById("p1").value=='')
+    {
+        return false;
+    }
+}
+
+</script>
+
+
+</body>
+</html>

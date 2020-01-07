@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doc</title>
+</head>
+<body>
+    <form action="submitted.html" onsubmit="return validate()">
+        Enter name:<input type="text" id="t1" value="">
+        Enter password:<input type="password" id="p1" value="">
+        <input type="submit">
+        
+
+    </form>
+    <div id="d1" style="color:red">
+    </div>
+<script>
+function validate()
+
+{
+    var t1=document.getElementById("t1");
+    var t1=document.getElementById("t1");
+
+    if (t1.value=='')
+    { 
+        t1.focus();
+        t1.style.border='1 solid red';
+        d1.innerHTML="**Enter Name"
+        return false;
+
+    }
+    if(p1.value=='')
+    {
+        p1.focus();
+        p1.style.border='1 solid red';
+        d1.innerHTML="**Enter Password"
+        return false;
+        
+    }
+    console.log("Validation dome");
+
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+..........................submitted.html................
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    Submitted
+</body>
+</html>
